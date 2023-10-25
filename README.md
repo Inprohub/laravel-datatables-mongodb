@@ -39,7 +39,7 @@ so you __either__ you have to add the service provide:
 'providers' => [
     ...,
     Yajra\DataTables\DataTablesServiceProvider::class,
-    Pimlie\DataTables\MongodbDataTablesServiceProvider::class, // add _after_ Yajra's ServiceProvider
+    Inprohub\DataTables\MongodbDataTablesServiceProvider::class, // add _after_ Yajra's ServiceProvider
 ]
 ```
 
@@ -53,9 +53,9 @@ __or__ open the `config/datatables.php` file and add the engines manually to the
         // The Jenssegers\Mongodb classes extend the default Query/Eloquent classes
         // thus the engines need to be listed above the default engines
         // to make sure they are tried first
-        'moloquent'      => Pimlie\DataTables\MongodbDataTable::class,
-        'mongodb-query'  => Pimlie\DataTables\MongodbQueryDataTable::class,
-        'mongodb-hybrid' => Pimlie\DataTables\HybridMongodbQueryDataTable::class,
+        'moloquent'      => Inprohub\DataTables\MongodbDataTable::class,
+        'mongodb-query'  => Inprohub\DataTables\MongodbQueryDataTable::class,
+        'mongodb-hybrid' => Inprohub\DataTables\HybridMongodbQueryDataTable::class,
 
         'eloquent'       => Yajra\DataTables\EloquentDataTable::class,
         'query-builder'  => Yajra\DataTables\QueryDataTable::class,
@@ -94,7 +94,7 @@ $datatables = datatables(MyMongodbModel::all());
 ### Use the dataTable class directly.
 
 ```php
-use Pimlie\DataTables\MongodbDataTable;
+use Inprohub\DataTables\MongodbDataTable;
 
 return (new MongodbDataTable(App\User::where('id', '>', 1))->toJson()
 ```
@@ -104,7 +104,7 @@ return (new MongodbDataTable(App\User::where('id', '>', 1))->toJson()
 
 ```php
 use Jenssegers\Mongodb\Eloquent\Model;
-use Pimlie\DataTables\Traits\MongodbDataTableTrait;
+use Inprohub\DataTables\Traits\MongodbDataTableTrait;
 
 class User extends Model
 {

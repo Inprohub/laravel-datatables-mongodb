@@ -1,8 +1,8 @@
 <?php
 
-namespace Pimlie\DataTables\Tests\Models;
+namespace Inprohub\DataTables\Tests\Models;
 
-use Jenssegers\Mongodb\Eloquent\Model as Eloquent;
+use MongoDB\Laravel\Eloquent\Model as Eloquent;
 
 class Post extends Eloquent
 {

@@ -1,11 +1,11 @@
 <?php
 
-namespace Pimlie\DataTables\Tests;
+namespace Inprohub\DataTables\Tests;
 
-use Pimlie\DataTables\Tests\Models\User;
-use Pimlie\DataTables\Tests\Models\Role;
-use Pimlie\DataTables\Tests\Models\Post;
-use Pimlie\DataTables\Tests\Models\Heart;
+use Inprohub\DataTables\Tests\Models\User;
+use Inprohub\DataTables\Tests\Models\Role;
+use Inprohub\DataTables\Tests\Models\Post;
+use Inprohub\DataTables\Tests\Models\Heart;
 
 abstract class TestCase extends \Orchestra\Testbench\TestCase
 {
@@ -68,7 +68,7 @@ abstract class TestCase extends \Orchestra\Testbench\TestCase
     protected function getPackageProviders($app)
     {
         return [
-            \Jenssegers\Mongodb\MongodbServiceProvider::class,
+            \MongoDB\Laravel\MongodbServiceProvider::class,
             \Yajra\DataTables\DataTablesServiceProvider::class,
         ];
     }

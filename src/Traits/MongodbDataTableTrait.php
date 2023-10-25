@@ -1,7 +1,7 @@
 <?php
-namespace Pimlie\DataTables\Traits;
+namespace Inprohub\DataTables\Traits;
 
-use Pimlie\DataTables\MongodbDataTable;
+use Inprohub\DataTables\MongodbDataTable;
 
 trait MongodbDataTableTrait
 {

@@ -1,13 +1,13 @@
 <?php
-namespace Pimlie\DataTables\Tests;
+namespace Inprohub\DataTables\Tests;
 
 use DB;
 use Illuminate\Http\JsonResponse;
-use Jenssegers\Mongodb\Query\Builder;
+use MongoDB\Laravel\Query\Builder;
 use Yajra\DataTables\DataTables;
 use Yajra\DataTables\Facades\DataTables as DatatablesFacade;
-use Pimlie\DataTables\MongodbQueryDataTable;
-use Pimlie\DataTables\Tests\TestCase;
+use Inprohub\DataTables\MongodbQueryDataTable;
+use Inprohub\DataTables\Tests\TestCase;
 
 class MongodbQueryDataTableTest extends TestCase
 {

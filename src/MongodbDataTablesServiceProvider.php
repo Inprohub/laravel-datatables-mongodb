@@ -1,6 +1,6 @@
 <?php
 
-namespace Pimlie\DataTables;
+namespace Inprohub\DataTables;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Str;
@@ -30,7 +30,6 @@ class MongodbDataTablesServiceProvider extends ServiceProvider
         
         foreach (static::$engines as $engine => $class) {
             $engine = Str::camel($engine);
-
             if (!DataTables::hasMacro($engine)) {
                 DataTables::macro($engine, function () use ($class) {
                     if (!call_user_func_array(array($class, 'canCreate'), func_get_args())) {

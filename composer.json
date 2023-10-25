@@ -1,5 +1,5 @@
 {
-    "name": "pimlie/laravel-datatables-mongodb",
+    "name": "inprohub/laravel-datatables-mongodb",
     "description": "Laravel DataTables plugin to support Mongodb",
     "keywords": [
         "laravel",
@@ -14,29 +14,29 @@
         }
     ],
     "require": {
-        "yajra/laravel-datatables-oracle": "^8.9|^9.6",
-        "jenssegers/mongodb" : "^3.4"
+        "yajra/laravel-datatables-oracle": ">9.6",
+        "mongodb/laravel-mongodb" : ">3.4"
     },
     "autoload": {
         "psr-4": {
-            "Pimlie\\DataTables\\": "src/"
+            "Inprohub\\DataTables\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Pimlie\\DataTables\\Tests\\": "tests/"
+            "Inprohub\\DataTables\\Tests\\": "tests/"
         }
     },
   "extra": {
         "laravel": {
           "providers": [
-            "Pimlie\\DataTables\\MongodbDataTablesServiceProvider"
+            "Inprohub\\DataTables\\MongodbDataTablesServiceProvider"
           ]
         }
     },
     "minimum-stability": "stable",
     "require-dev": {
-        "Orchestra/Testbench": "^3.5",
+        "orchestra/testbench": "^3.5",
         "squizlabs/php_codesniffer": "^3.1"
     },
     "scripts": {

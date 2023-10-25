@@ -1,10 +1,10 @@
 <?php
 
-namespace Pimlie\DataTables\Tests;
+namespace Inprohub\DataTables\Tests;
 
 use Yajra\DataTables\DataTables;
-use Pimlie\DataTables\Tests\Models\User;
-use Pimlie\DataTables\Tests\TestCase;
+use Inprohub\DataTables\Tests\Models\User;
+use Inprohub\DataTables\Tests\TestCase;
 
 // Skip these tests, $lookup/joins are not supported
 abstract class HasOneRelationTest extends TestCase

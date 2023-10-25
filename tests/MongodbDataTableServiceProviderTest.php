@@ -1,14 +1,14 @@
 <?php
 
-namespace Pimlie\DataTables\Tests;
+namespace Inprohub\DataTables\Tests;
 
 use Illuminate\Http\JsonResponse;
 use Yajra\DataTables\DataTables;
 use Yajra\DataTables\Facades\DataTables as DatatablesFacade;
-use Pimlie\DataTables\MongodbDataTable;
-use Pimlie\DataTables\Tests\ServiceProviderTestCase;
-use Pimlie\DataTables\Tests\Models\User;
-use Pimlie\DataTables\Tests\Models\Role;
+use Inprohub\DataTables\MongodbDataTable;
+use Inprohub\DataTables\Tests\ServiceProviderTestCase;
+use Inprohub\DataTables\Tests\Models\User;
+use Inprohub\DataTables\Tests\Models\Role;
 
 class MongodbDataTableTestServiceProvider extends ServiceProviderTestCase
 {

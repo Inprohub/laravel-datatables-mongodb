@@ -1,6 +1,6 @@
 <?php
 
-namespace Pimlie\DataTables\Tests;
+namespace Inprohub\DataTables\Tests;
 
 abstract class ServiceProviderTestCase extends TestCase
 {
@@ -13,7 +13,7 @@ abstract class ServiceProviderTestCase extends TestCase
     protected function getPackageProviders($app)
     {
         return array_merge(parent::getPackageProviders($app), 
-                            array(\Pimlie\DataTables\MongodbDataTablesServiceProvider::class));
+                            array(\Inprohub\DataTables\MongodbDataTablesServiceProvider::class));
     }
 
     /**

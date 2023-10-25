@@ -39,8 +39,8 @@ return [
      * This is where you can register your custom dataTables builder.
      */
     'engines'        => [
-        'moloquent'    => \Pimlie\DataTables\MongodbDataTable::class,
-        'mongodbQuery' => \Pimlie\DataTables\MongodbQueryDataTable::class,
+        'moloquent'    => \Inprohub\DataTables\MongodbDataTable::class,
+        'mongodbQuery' => \Inprohub\DataTables\MongodbQueryDataTable::class,
 
         'eloquent'   => \Yajra\DataTables\EloquentDataTable::class,
         'query'      => \Yajra\DataTables\QueryDataTable::class,
@@ -51,9 +51,9 @@ return [
      * DataTables accepted builder to engine mapping.
      */
     'builders'       => [
-        Jenssegers\Mongodb\Eloquent\Builder::class             => 'moloquent',
-        Jenssegers\Mongodb\Query\Builder::class                => 'mongodbQuery',
-        Jenssegers\Mongodb\Helpers\EloquentBuilder::class      => 'eloquent',
+        MongoDB\Laravel\Eloquent\Builder::class             => 'moloquent',
+        MongoDB\Laravel\Query\Builder::class                => 'mongodbQuery',
+        MongoDB\Laravel\Helpers\EloquentBuilder::class      => 'eloquent',
         //Illuminate\Database\Eloquent\Relations\Relation::class => 'eloquent',
         //Illuminate\Database\Eloquent\Builder::class            => 'eloquent',
         //Illuminate\Database\Query\Builder::class               => 'query',
